@@ -31,3 +31,26 @@
     transform: rotate(360deg);
   }
 }
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+button {
+  width: 20vh;
+  height: 10vh;
+  padding: auto;
+  margin: auto;
+  font-size: 2em;
+}
+  
+.display {
+  padding: .8em;
+  background-color: blanchedalmond;
+}
+
+.dashboard {
+  background-color: rgb(130, 202, 130);
+}
