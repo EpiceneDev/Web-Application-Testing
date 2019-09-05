@@ -1,16 +1,15 @@
 import React from 'react';
 
-class Display extends React.Component {
-    render() {
+const Display = (props) => {
+    console.log('display props', props)
         return (
             <div className="display">
                 <h1>At Bat:</h1>
                 <hr></hr>
-                <h3>Balls: {}</h3>
-                <h3>Strikes: {}</h3>
+                <h3>Balls: {props.balls}</h3>
+                <h3>Strikes: {props.strikes}</h3>
             </div>
         )
-    }
 }
 
 export default Display;
