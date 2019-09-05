@@ -7,22 +7,22 @@ import Dashboard from './components/Dashboard.js';
 function App() {
   const [strikes, setStrikes] = useState(0);
   const [balls, setBalls] = useState(0);
-  const [fouls, setFouls] = useState(0);
+  // const [fouls, setFouls] = useState(0);
 
-  const strike = () => {
-    if(strikes == 2) {
-      setStrikes(0);
-    }else{
-    setStrikes(strikes + 1);
+  const handleStrike = () => {
+    if(strikes < 2) {
+      setStrikes(strikes +1)
+    }else if (strikes >= 3) {
+      setStrikes(0)
     }
-
   };
 
   const ball = () => {
-    if(ball == 3) {
+    if(ball === 3) {
       setBalls(0);
-    }
+    }else{
     setBalls(balls + 1)
+    } 
   }
 
   
@@ -31,10 +31,8 @@ function App() {
     <div className="App">
       <Display  strikes={strikes} balls={balls} />
       <Dashboard 
-          setStrikes={setStrikes}
-          strike={strike}
-          setBalls={setBalls}
-          Ball={ball} />
+          handlestrike={handleStrike}
+          ball={ball} />
     </div>
   );
 }
