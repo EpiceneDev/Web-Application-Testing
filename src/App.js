@@ -7,7 +7,6 @@ import Dashboard from './components/Dashboard.js';
 function App() {
   const [strikes, setStrikes] = useState(0);
   const [balls, setBalls] = useState(0);
-  // const [fouls, setFouls] = useState(0);
 
   const handleStrike = () => {
     if(strikes === 3) {
