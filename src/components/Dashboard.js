@@ -10,8 +10,8 @@ const Dashboard = (props) => {
                 <div className="buttons">
                     <button onClick={props.strike}>STRIKE</button>
                     <button onClick= {props.ball}>BALL</button>
-                    <button>FOUL</button>
-                    <button>HIT</button>
+                    <button onClick={props.foul}>FOUL</button>
+                    <button onClick={props.hit}>HIT</button>
                 </div>
             </div>
         )

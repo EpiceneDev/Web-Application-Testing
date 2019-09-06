@@ -25,14 +25,26 @@ function App() {
     } 
   }
 
-  
+  const hit = () => {
+    setStrikes(0);
+    setBalls(0);
+    // setFouls(0);
+  }
+
+  const foul = () => {
+    if (strikes === 0 || strikes === 1) {
+      setStrikes(strikes + 1)
+    }
+  }
 
   return (
     <div className="App">
       <Display  strikes={strikes} balls={balls} />
       <Dashboard 
           strike={handleStrike}
-          ball={handleBall} />
+          ball={handleBall}
+          foul={foul}
+          hit={hit} />
     </div>
   );
 }
