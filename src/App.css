@@ -1,0 +1,27 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+button {
+  width: 5em;
+  height: 2em;
+  padding: auto;
+  margin: .5em;
+  font-size: 2em;
+}
+  
+.display {
+  padding: .8em;
+  background-color: blanchedalmond;
+}
+
+.dashboard {
+  background-color: rgb(130, 202, 130);
+}
